@@ -12,3 +12,13 @@ GET http://localhost:8080/strategy/enum/CHAT
 #GET http://localhost:8080/strategy/bean/smsNotificationBean
 #GET http://localhost:8080/strategy/bean/chatNotificationBean
 GET http://localhost:8080/strategy/bean/emailNotificationBean
+
+### Self-register strategy
+GET http://localhost:8080/strategy/register/sms
+#GET http://localhost:8080/strategy/register/chat
+#GET http://localhost:8080/strategy/register/email
+
+### Map direct strategy (Spring Map injection)
+GET http://localhost:8080/strategy/map/sms
+#GET http://localhost:8080/strategy/map/chat
+#GET http://localhost:8080/strategy/map/email
