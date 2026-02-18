@@ -1,0 +1,14 @@
+### String strategy
+GET http://localhost:8080/strategy/string/sms
+#GET http://localhost:8080/strategy/string/chat
+#GET http://localhost:8080/strategy/string/email
+
+### Enum strategy
+#GET http://localhost:8080/strategy/enum/SMS
+GET http://localhost:8080/strategy/enum/CHAT
+#GET http://localhost:8080/strategy/enum/EMAIL
+
+### Bean strategy
+#GET http://localhost:8080/strategy/bean/smsNotificationBean
+#GET http://localhost:8080/strategy/bean/chatNotificationBean
+GET http://localhost:8080/strategy/bean/emailNotificationBean
