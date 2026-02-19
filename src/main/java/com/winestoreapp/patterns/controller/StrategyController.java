@@ -8,12 +8,17 @@ import com.winestoreapp.patterns.strategy.registermyselfstrategy.NotificationReg
 import com.winestoreapp.patterns.strategy.stringstrategy.NotificationStringFabrica;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/strategy")
 public class StrategyController {
+
+    private final String link = "https://www.youtube.com/watch?v=61duchvKI6o";
 
     private final NotificationStringFabrica notificationStringFabrica;
     private final NotificationEnumFabrica notificationEnumFabrica;
